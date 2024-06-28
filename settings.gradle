@@ -16,4 +16,4 @@ pluginManagement {
         }
     }
 }
-rootProject.name = "ui-framework-mc1_20"
+rootProject.name = "ui-framework-mc1_20_6"

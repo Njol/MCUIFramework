@@ -127,11 +127,7 @@ public abstract class HudElement {
 		BufferRenderer.drawWithGlobalProgram(bufferBuilder.end());
 	}
 
-	/**
-	 * @deprecated use {@link DrawContext#drawSprite(int, int, int, int, int, Sprite)} instead.
-	**/
 	public static void drawSprite(DrawContext drawContext, Sprite sprite, float x, float y, float width, float height) {
-		//drawContext.drawSprite((int) x, (int) y, 0, (int) width, (int) height, sprite);
 		RenderSystem.setShaderTexture(0, sprite.getAtlasId());
 		drawTexturedQuadSmooth(drawContext.getMatrices().peek().getPositionMatrix(), x, y, x + width, y + height, 0, sprite.getMinU(), sprite.getMinV(), sprite.getMaxU(), sprite.getMaxV());
 	}
